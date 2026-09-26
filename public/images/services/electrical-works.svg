@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071426"/>
+    <stop offset="1" stop-color="#102f50"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe28a"/>
+    <stop offset=".5" stop-color="#e7b941"/>
+    <stop offset="1" stop-color="#a96d00"/>
+  </linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#55a8ff"/>
+    <stop offset="1" stop-color="#0757c9"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<title id="title">Industrial electrical works and manpower</title><desc id="desc">GEW industrial engineering illustration for industrial electrical works and manpower.</desc>
+<rect width="900" height="520" rx="30" fill="url(#bg)"/>
+<path d="M0 405 C170 345 300 455 470 385 S740 345 900 395 V520 H0Z" fill="#06101d" opacity=".72"/>
+
+<g stroke="#bfe0fa" stroke-width="8" fill="none" stroke-linejoin="round">
+ <rect x="155" y="135" width="590" height="285" rx="18"/><path d="M220 210H680M220 280H680M220 350H680"/>
+ <path d="M300 135V420M450 135V420M600 135V420"/>
+</g>
+<g fill="url(#gold)"><circle cx="260" cy="210" r="14"/><circle cx="370" cy="210" r="14"/><circle cx="520" cy="280" r="14"/><circle cx="640" cy="350" r="14"/></g>
+<path d="M470 110L405 235H460L425 315L520 175H465Z" fill="url(#blue)" stroke="#8fcaff" stroke-width="4"/>
+<g opacity=".22" stroke="#8cc7ff" stroke-width="2"><path d="M55 65H845"/><path d="M55 95H845"/><path d="M55 125H845"/></g>
+<g fill="#e7b941"><circle cx="70" cy="455" r="5"/><circle cx="830" cy="65" r="5"/></g>
+</svg>

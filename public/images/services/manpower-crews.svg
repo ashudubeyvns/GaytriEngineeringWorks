@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071426"/>
+    <stop offset="1" stop-color="#102f50"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe28a"/>
+    <stop offset=".5" stop-color="#e7b941"/>
+    <stop offset="1" stop-color="#a96d00"/>
+  </linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#55a8ff"/>
+    <stop offset="1" stop-color="#0757c9"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<title id="title">Industrial manpower and site crews</title><desc id="desc">GEW industrial engineering illustration for industrial manpower and site crews.</desc>
+<rect width="900" height="520" rx="30" fill="url(#bg)"/>
+<path d="M0 405 C170 345 300 455 470 385 S740 345 900 395 V520 H0Z" fill="#06101d" opacity=".72"/>
+
+<g fill="url(#blue)" stroke="#bfe0fa" stroke-width="4">
+ <circle cx="290" cy="190" r="48"/><circle cx="450" cy="165" r="55"/><circle cx="610" cy="190" r="48"/>
+ <path d="M205 365C205 295 245 255 290 255S375 295 375 365Z"/><path d="M340 390C340 310 390 265 450 265S560 310 560 390Z"/><path d="M525 365C525 295 565 255 610 255S695 295 695 365Z"/>
+</g>
+<g fill="url(#gold)"><path d="M250 160L290 125L330 160L320 200H260Z"/><path d="M395 130L450 90L505 130L492 180H408Z"/><path d="M570 160L610 125L650 160L640 200H580Z"/></g>
+<g stroke="#e7b941" stroke-width="8"><path d="M155 425H745"/></g>
+<g opacity=".22" stroke="#8cc7ff" stroke-width="2"><path d="M55 65H845"/><path d="M55 95H845"/><path d="M55 125H845"/></g>
+<g fill="#e7b941"><circle cx="70" cy="455" r="5"/><circle cx="830" cy="65" r="5"/></g>
+</svg>

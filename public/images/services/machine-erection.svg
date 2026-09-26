@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071426"/>
+    <stop offset="1" stop-color="#102f50"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe28a"/>
+    <stop offset=".5" stop-color="#e7b941"/>
+    <stop offset="1" stop-color="#a96d00"/>
+  </linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#55a8ff"/>
+    <stop offset="1" stop-color="#0757c9"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<title id="title">Pulp and paper machine erection</title><desc id="desc">GEW industrial engineering illustration for pulp and paper machine erection.</desc>
+<rect width="900" height="520" rx="30" fill="url(#bg)"/>
+<path d="M0 405 C170 345 300 455 470 385 S740 345 900 395 V520 H0Z" fill="#06101d" opacity=".72"/>
+
+<g stroke="#b7d9f7" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M90 360V235H805V360"/><path d="M125 235V175H760V235"/><path d="M155 175V130H730V175"/>
+ <path d="M205 360V290H285V360M345 360V290H425V360M490 360V290H570V360M630 360V290H710V360"/>
+ <path d="M115 410H785"/><path d="M160 410V450M735 410V450"/>
+</g>
+<g fill="url(#gold)" stroke="#fff2b5" stroke-width="3"><ellipse cx="260" cy="250" rx="68" ry="22"/><ellipse cx="430" cy="250" rx="68" ry="22"/><ellipse cx="600" cy="250" rx="68" ry="22"/></g>
+<g fill="url(#blue)"><rect x="220" y="272" width="80" height="42" rx="8"/><rect x="390" y="272" width="80" height="42" rx="8"/><rect x="560" y="272" width="80" height="42" rx="8"/></g>
+<g filter="url(#glow)" fill="#fff"><circle cx="120" cy="165" r="7"/><circle cx="770" cy="165" r="7"/></g>
+<g opacity=".22" stroke="#8cc7ff" stroke-width="2"><path d="M55 65H845"/><path d="M55 95H845"/><path d="M55 125H845"/></g>
+<g fill="#e7b941"><circle cx="70" cy="455" r="5"/><circle cx="830" cy="65" r="5"/></g>
+</svg>

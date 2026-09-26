@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071426"/>
+    <stop offset="1" stop-color="#102f50"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe28a"/>
+    <stop offset=".5" stop-color="#e7b941"/>
+    <stop offset="1" stop-color="#a96d00"/>
+  </linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#55a8ff"/>
+    <stop offset="1" stop-color="#0757c9"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<title id="title">Heavy steel structures and fabrication</title><desc id="desc">GEW industrial engineering illustration for heavy steel structures and fabrication.</desc>
+<rect width="900" height="520" rx="30" fill="url(#bg)"/>
+<path d="M0 405 C170 345 300 455 470 385 S740 345 900 395 V520 H0Z" fill="#06101d" opacity=".72"/>
+
+<g stroke="#c5e2f8" stroke-width="9" fill="none" stroke-linejoin="round">
+ <path d="M130 420V140H770V420"/><path d="M130 205H770M130 275H770M130 345H770"/>
+ <path d="M210 140V420M330 140V420M450 140V420M570 140V420M690 140V420"/>
+ <path d="M130 140L210 205L130 275L210 345L130 420M770 140L690 205L770 275L690 345L770 420"/>
+</g>
+<g stroke="#e7b941" stroke-width="8"><path d="M175 455H725"/><path d="M265 455V420M635 455V420"/></g>
+<g fill="url(#blue)"><rect x="380" y="185" width="140" height="55" rx="9"/></g>
+<g opacity=".22" stroke="#8cc7ff" stroke-width="2"><path d="M55 65H845"/><path d="M55 95H845"/><path d="M55 125H845"/></g>
+<g fill="#e7b941"><circle cx="70" cy="455" r="5"/><circle cx="830" cy="65" r="5"/></g>
+</svg>

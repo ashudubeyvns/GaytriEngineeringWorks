@@ -1,0 +1,13 @@
+.DS_Store
+.firebase/
+.firebaserc
+node_modules/
+
+# Local/editor files
+.idea/
+.vscode/
+
+# Local credentials / secrets
+.env
+.env.*
+!.env.example

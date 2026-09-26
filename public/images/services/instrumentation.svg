@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071426"/>
+    <stop offset="1" stop-color="#102f50"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe28a"/>
+    <stop offset=".5" stop-color="#e7b941"/>
+    <stop offset="1" stop-color="#a96d00"/>
+  </linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#55a8ff"/>
+    <stop offset="1" stop-color="#0757c9"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<title id="title">Industrial instrumentation works and manpower</title><desc id="desc">GEW industrial engineering illustration for industrial instrumentation works and manpower.</desc>
+<rect width="900" height="520" rx="30" fill="url(#bg)"/>
+<path d="M0 405 C170 345 300 455 470 385 S740 345 900 395 V520 H0Z" fill="#06101d" opacity=".72"/>
+
+<g stroke="#c7e3fa" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M105 360H795"/><path d="M180 360V190H720V360"/><path d="M270 190V125H630V190"/>
+ <path d="M300 360V260H600V360"/>
+</g>
+<g fill="url(#blue)" stroke="#9bd1ff" stroke-width="4"><circle cx="330" cy="235" r="38"/><circle cx="570" cy="235" r="38"/></g>
+<g fill="none" stroke="#e7b941" stroke-width="6"><path d="M330 235L350 215M570 235L595 235"/><circle cx="450" cy="315" r="50"/></g>
+<g stroke="#fff" stroke-width="4"><path d="M450 285V345M420 315H480"/></g>
+<g opacity=".22" stroke="#8cc7ff" stroke-width="2"><path d="M55 65H845"/><path d="M55 95H845"/><path d="M55 125H845"/></g>
+<g fill="#e7b941"><circle cx="70" cy="455" r="5"/><circle cx="830" cy="65" r="5"/></g>
+</svg>

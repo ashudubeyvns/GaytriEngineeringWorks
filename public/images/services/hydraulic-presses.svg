@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071426"/>
+    <stop offset="1" stop-color="#102f50"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe28a"/>
+    <stop offset=".5" stop-color="#e7b941"/>
+    <stop offset="1" stop-color="#a96d00"/>
+  </linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#55a8ff"/>
+    <stop offset="1" stop-color="#0757c9"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<title id="title">Heavy hydraulic press erection</title><desc id="desc">GEW industrial engineering illustration for heavy hydraulic press erection.</desc>
+<rect width="900" height="520" rx="30" fill="url(#bg)"/>
+<path d="M0 405 C170 345 300 455 470 385 S740 345 900 395 V520 H0Z" fill="#06101d" opacity=".72"/>
+
+<g stroke="#b8d9f5" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M170 395V165H730V395"/><path d="M225 165V115H675V165"/><path d="M300 115V80H600V115"/>
+ <path d="M275 395V235H625V395"/><path d="M250 235H650"/><path d="M450 115V235"/>
+</g>
+<rect x="320" y="285" width="260" height="72" rx="12" fill="url(#blue)" stroke="#9dd1ff" stroke-width="4"/>
+<rect x="375" y="205" width="150" height="62" rx="10" fill="url(#gold)"/>
+<g stroke="#e7b941" stroke-width="9"><path d="M125 425H775"/><path d="M190 395L150 440M710 395L750 440"/></g>
+<g opacity=".22" stroke="#8cc7ff" stroke-width="2"><path d="M55 65H845"/><path d="M55 95H845"/><path d="M55 125H845"/></g>
+<g fill="#e7b941"><circle cx="70" cy="455" r="5"/><circle cx="830" cy="65" r="5"/></g>
+</svg>

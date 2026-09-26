@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071426"/>
+    <stop offset="1" stop-color="#102f50"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe28a"/>
+    <stop offset=".5" stop-color="#e7b941"/>
+    <stop offset="1" stop-color="#a96d00"/>
+  </linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#55a8ff"/>
+    <stop offset="1" stop-color="#0757c9"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<title id="title">Precision optical alignment</title><desc id="desc">GEW industrial engineering illustration for precision optical alignment.</desc>
+<rect width="900" height="520" rx="30" fill="url(#bg)"/>
+<path d="M0 405 C170 345 300 455 470 385 S740 345 900 395 V520 H0Z" fill="#06101d" opacity=".72"/>
+
+<g stroke="#bfe0fa" stroke-width="7" fill="none" stroke-linejoin="round">
+ <path d="M120 395H780"/><path d="M190 395L450 150L710 395"/><path d="M285 395V330H615V395"/>
+ <path d="M450 150V90"/><path d="M415 90H485"/>
+</g>
+<g fill="url(#gold)" stroke="#fff1ad" stroke-width="3"><circle cx="450" cy="150" r="25"/><circle cx="285" cy="330" r="18"/><circle cx="615" cy="330" r="18"/></g>
+<g stroke="#55a8ff" stroke-width="5" opacity=".9"><path d="M450 150L285 330M450 150L615 330"/></g>
+<g fill="#fff"><circle cx="450" cy="150" r="6"/></g>
+<g opacity=".22" stroke="#8cc7ff" stroke-width="2"><path d="M55 65H845"/><path d="M55 95H845"/><path d="M55 125H845"/></g>
+<g fill="#e7b941"><circle cx="70" cy="455" r="5"/><circle cx="830" cy="65" r="5"/></g>
+</svg>

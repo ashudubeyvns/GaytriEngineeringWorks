@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071426"/>
+    <stop offset="1" stop-color="#102f50"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe28a"/>
+    <stop offset=".5" stop-color="#e7b941"/>
+    <stop offset="1" stop-color="#a96d00"/>
+  </linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#55a8ff"/>
+    <stop offset="1" stop-color="#0757c9"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<title id="title">Industrial pipeline and utility networks</title><desc id="desc">GEW industrial engineering illustration for industrial pipeline and utility networks.</desc>
+<rect width="900" height="520" rx="30" fill="url(#bg)"/>
+<path d="M0 405 C170 345 300 455 470 385 S740 345 900 395 V520 H0Z" fill="#06101d" opacity=".72"/>
+
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M95 180H310V290H500V150H805" stroke="#c6e3fb" stroke-width="30"/>
+ <path d="M110 350H250V255H420V405H660V300H790" stroke="#55a8ff" stroke-width="24"/>
+ <path d="M310 105V180M500 290V350M660 300V220" stroke="#e7b941" stroke-width="14"/>
+</g>
+<g fill="#071426" stroke="#e7b941" stroke-width="5"><circle cx="310" cy="180" r="25"/><circle cx="500" cy="290" r="25"/><circle cx="660" cy="300" r="25"/></g>
+<g fill="#e7b941"><circle cx="155" cy="350" r="8"/><circle cx="745" cy="150" r="8"/></g>
+<g opacity=".22" stroke="#8cc7ff" stroke-width="2"><path d="M55 65H845"/><path d="M55 95H845"/><path d="M55 125H845"/></g>
+<g fill="#e7b941"><circle cx="70" cy="455" r="5"/><circle cx="830" cy="65" r="5"/></g>
+</svg>
