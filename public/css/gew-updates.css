@@ -1,0 +1,28 @@
+.gew-updates-preview,.gew-updates-page{padding:88px 0;background:linear-gradient(180deg,#0b1722,#101f2c);color:#f5f7fa}
+.gew-updates-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}
+.gew-updates-kicker{font-size:11px;letter-spacing:.22em;font-weight:800;color:#d9ad45}
+.gew-updates-heading h2,.gew-updates-title{font-size:clamp(30px,4vw,48px);line-height:1.08;margin:12px 0;color:#fff}
+.gew-updates-heading h2 span{color:#e2b94e}.gew-updates-heading p{color:#aebdca;margin:0;max-width:580px}
+.gew-updates-link{color:#e6c15d;text-decoration:none;font-weight:800;white-space:nowrap}
+.gew-update-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.gew-update-card{background:#142635;border:1px solid rgba(226,185,78,.2);border-radius:16px;overflow:hidden;box-shadow:0 18px 44px #0003;transition:transform .25s,border-color .25s}
+.gew-update-card:hover{transform:translateY(-5px);border-color:#dcb64e}
+.gew-update-image{width:100%;height:210px;object-fit:cover;display:block;background:#203443}
+.gew-update-body{padding:22px}.gew-update-meta{display:flex;gap:10px;flex-wrap:wrap;color:#9fb0bd;font-size:12px;margin-bottom:12px}
+.gew-update-category{color:#f0cb67;border:1px solid #f0cb6759;border-radius:30px;padding:5px 10px;font-weight:800}
+.gew-update-body h3{font-size:20px;line-height:1.3;margin:0 0 10px;color:#fff}.gew-update-body p{color:#b8c5ce;line-height:1.65;margin:0}
+.gew-updates-loading,.gew-updates-empty{grid-column:1/-1;padding:35px;border:1px dashed #ffffff33;border-radius:14px;color:#b8c5ce;text-align:center}
+.gew-updates-page{min-height:65vh;padding-top:70px}.gew-updates-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0}
+.gew-filter{background:#172c3b;color:#e9eef2;border:1px solid #344b5d;border-radius:30px;padding:10px 17px;cursor:pointer}
+.gew-filter.active{background:#dcb64e;color:#14202a;border-color:#dcb64e;font-weight:800}
+.gew-admin-wrap{min-height:100vh;padding:55px 18px;background:#0c1721;color:#f5f7fa}
+.gew-admin-panel{max-width:900px;margin:auto;background:#142635;border:1px solid #344b5d;border-radius:18px;padding:clamp(22px,4vw,42px)}
+.gew-admin-panel h1{margin-top:0}.gew-admin-panel label{display:block;font-size:13px;font-weight:700;color:#dce5eb;margin:17px 0 7px}
+.gew-admin-panel input,.gew-admin-panel textarea,.gew-admin-panel select{width:100%;padding:13px 14px;border-radius:9px;border:1px solid #40586a;background:#0c1b27;color:#fff;font:inherit}
+.gew-admin-panel textarea{min-height:130px;resize:vertical}.gew-admin-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.gew-admin-btn{border:0;border-radius:9px;background:#dcb64e;color:#17222b;padding:13px 20px;font-weight:900;cursor:pointer;margin-top:20px}
+.gew-admin-btn.secondary{background:#30495b;color:#fff}.gew-admin-status{margin-top:14px;color:#e9c866;min-height:22px}
+.gew-admin-list{margin-top:30px;border-top:1px solid #344b5d;padding-top:20px}.gew-admin-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #304555}
+.gew-admin-item button{background:#30495b;color:white;border:0;border-radius:7px;padding:8px 12px;cursor:pointer}
+@media(max-width:850px){.gew-update-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.gew-updates-preview,.gew-updates-page{padding:60px 0}.gew-updates-heading{align-items:start;flex-direction:column}.gew-update-grid{grid-template-columns:1fr}.gew-admin-row{grid-template-columns:1fr}.gew-update-image{height:220px}}
