@@ -1,0 +1,15 @@
+import {initializeApp} from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+import {getAuth,signInWithEmailAndPassword,onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
+import {getFirestore,collection,addDoc,getDocs,query,orderBy,deleteDoc,doc,serverTimestamp} from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+import {getStorage,ref,uploadBytes,getDownloadURL} from "https://www.gstatic.com/firebasejs/11.6.0/firebase-storage.js";
+import {firebaseConfig} from "./firebase-config.js";
+const $=id=>document.getElementById(id);
+if(firebaseConfig.apiKey==="PASTE_FIREBASE_API_KEY")$("login-status").textContent="Setup required: configure Firebase in /js/firebase-config.js and enable Email/Password Authentication, Firestore and Storage.";
+else{
+ const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app),storage=getStorage(app);
+ $("login-form").onsubmit=async e=>{e.preventDefault();try{await signInWithEmailAndPassword(auth,$("email").value,$("password").value)}catch(x){$("login-status").textContent=x.message}};
+ onAuthStateChanged(auth,u=>{$("login-form").hidden=!!u;$("editor").hidden=!u;if(u)loadPosts()});
+ $("logout").onclick=()=>signOut(auth);
+ $("publish").onclick=async()=>{const title=$("title").value.trim(),description=$("description").value.trim(),file=$("photo").files[0];if(!title||!description){$("status").textContent="Title and description are required.";return;}$("publish").disabled=true;$("status").textContent="Publishing…";try{let imageUrl="";if(file){if(!file.type.startsWith("image/")||file.size>8*1024*1024)throw Error("Choose an image under 8 MB.");const r=ref(storage,`gew-updates/${Date.now()}-${file.name.replace(/[^a-z0-9._-]/gi,"-")}`);await uploadBytes(r,file);imageUrl=await getDownloadURL(r)}await addDoc(collection(db,"gewUpdates"),{title,description,category:$("category").value,location:$("location").value.trim(),imageUrl,published:true,createdAt:serverTimestamp(),createdBy:auth.currentUser.uid});$("title").value="";$("description").value="";$("location").value="";$("photo").value="";$("status").textContent="Published successfully.";loadPosts()}catch(x){$("status").textContent="Could not publish: "+x.message}finally{$("publish").disabled=false}};
+ async function loadPosts(){try{const s=await getDocs(query(collection(db,"gewUpdates"),orderBy("createdAt","desc")));$("admin-posts").innerHTML=s.empty?"No posts yet.":s.docs.map(d=>`<div class="gew-admin-item"><span>${d.data().title||"Untitled"}</span><button data-id="${d.id}">Delete</button></div>`).join("");$("admin-posts").querySelectorAll("button").forEach(b=>b.onclick=async()=>{if(confirm("Delete this update permanently?")){await deleteDoc(doc(db,"gewUpdates",b.dataset.id));loadPosts()}})}catch(x){$("admin-posts").textContent=x.message}}
+}
